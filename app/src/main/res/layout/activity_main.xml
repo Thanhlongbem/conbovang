@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/img_back"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/transparent_color">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_ver_parent_25"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_ver_parent_50"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_ver_parent_75"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="CON BÒ VÀNG"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvPer1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_25"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Kate/Eliott"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPoint1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_25"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="5"
+            app:layout_constraintTop_toBottomOf="@+id/tvPer1"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/main_color"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:background="@drawable/bg_item_define_selector"/>
+
+        <TextView
+            android:id="@+id/tvPer2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/line_ver_parent_25"
+            app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_50"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Dave/Tommy"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPoint2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/line_ver_parent_25"
+            app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_50"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="5"
+            app:layout_constraintTop_toBottomOf="@+id/tvPer2"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/main_color"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:background="@drawable/bg_item_define_selector"/>
+
+        <TextView
+            android:id="@+id/tvPer3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/line_ver_parent_50"
+            app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_75"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Beo/Jackson"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPoint3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/line_ver_parent_50"
+            app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_75"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="5"
+            app:layout_constraintTop_toBottomOf="@+id/tvPer3"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/main_color"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:background="@drawable/bg_item_define_selector"/>
+
+        <TextView
+            android:id="@+id/tvPer4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/line_ver_parent_75"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Charlie/Tracy"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPoint4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/line_ver_parent_75"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="5"
+            app:layout_constraintTop_toBottomOf="@+id/tvPer4"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/main_color"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:background="@drawable/bg_item_define_selector"/>
+
+
+        <TextView
+            android:id="@+id/tvReset"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="30dp"
+            android:text="Reset"
+            android:background="@drawable/bg_item_define_selector"
+            android:gravity="center"
+            android:textColor="@color/main_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/tvInputName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvReset"
+            android:layout_marginBottom="10dp"
+            android:text="Nhập tên"
+            android:background="@drawable/bg_item_define_selector"
+            android:gravity="center"
+            android:textColor="@color/main_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/tvInputPoint"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvInputName"
+            android:layout_marginBottom="20dp"
+            android:text="Nhập điểm"
+            android:background="@drawable/bg_item_define_selector"
+            android:gravity="center"
+            android:textColor="@color/main_color"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

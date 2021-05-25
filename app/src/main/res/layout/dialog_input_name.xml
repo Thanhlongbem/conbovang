@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent_color">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_ver_parent_25"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_ver_parent_50"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_ver_parent_75"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tvTitleInputName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="Nhập tên người chơi các bạn ei !!!"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvInputNamePer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleInputName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_25"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Người chơi 1"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtInputNamePer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@drawable/bg_item_define_unselected"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputNamePer1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_25"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:hint="Người chơi 1"
+        android:imeOptions="actionNext"/>
+
+    <TextView
+        android:id="@+id/tvInputNamePer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleInputName"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_25"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_50"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Người chơi 2"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtInputNamePer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@drawable/bg_item_define_unselected"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputNamePer2"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_25"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_50"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:hint="Người chơi 2"
+        android:imeOptions="actionNext"/>
+
+    <TextView
+        android:id="@+id/tvInputNamePer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleInputName"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_50"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_75"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Người chơi 3"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtInputNamePer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@drawable/bg_item_define_unselected"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputNamePer3"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_50"
+        app:layout_constraintEnd_toStartOf="@+id/line_ver_parent_75"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:hint="Người chơi 3"
+        android:imeOptions="actionNext"/>
+
+    <TextView
+        android:id="@+id/tvInputNamePer4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleInputName"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_75"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Người chơi 4"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtInputNamePer4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:background="@drawable/bg_item_define_unselected"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputNamePer4"
+        app:layout_constraintStart_toEndOf="@+id/line_ver_parent_75"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:hint="Người chơi 4"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/tvInputNameOK"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="OKEY"
+        android:textColor="@color/main_color"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toBottomOf="@+id/edtInputNamePer4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_item_define_selector"
+        android:gravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
